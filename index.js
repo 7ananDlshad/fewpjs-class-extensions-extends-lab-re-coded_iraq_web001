@@ -21,13 +21,7 @@ class Polygon{
 class Triangle extends Polygon{
   
   get isValid(){
-    
-   if (this.sideArr[2] + this.sideArr[1] > this.sideArr[0] || this.sideArr[2] + this.sideArr[0] > this.sideArr[1] ||
-   this.sideArr[1] + this.sideArr[0] > this.sideArr[2]) 
-            return true; 
-        else
-            return false; 
-  }
+return (this.sides[0] + this.sides[1] > this.sides[2] && this.sides[0] + this.sides[2] > this.sides[1] && this.sides[2] + this.sides[1] > this.sides[0])
 }
 
 class Square extends Polygon{
